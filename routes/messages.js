@@ -8,7 +8,7 @@ const router = new express.Router();
 
 router.get('/', async function (req, res, next) {
     try {
-        return res.json(req);
+        return res.json(req.body);
     } catch (err) {
         return next(err);
     }
