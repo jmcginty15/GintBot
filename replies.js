@@ -28,7 +28,7 @@ const emoji = (userId, user) => {
 
 ` : '';
 
-    return `<a href="tg://user?id=${userId}">${user}</a>, you have broken King Hambrick Edict #5872: No emojis in the chat. ${warning}
+    return `<a href="tg://user?id=${userId}">${user}</a>, you have violated King Hambrick Edict #5872: No emojis in the chat. ${warning}
 
 ${heartbreak}${suggestions}`; 
 }
