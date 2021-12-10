@@ -8,7 +8,8 @@ const {
     shapiro,
     emoji,
     enableMe,
-    autistic
+    autistic,
+    triggers
 } = require('./replies');
 console.log('Bot server started');
 
@@ -48,6 +49,13 @@ bot.on('message', (msg) => {
 
     if (msg.text.toLowerCase() === '/gintbot') {
         bot.sendMessage(msg.chat.id, autistic(), {
+            reply_to_message_id: msg.message_id,
+            parse_mode: 'HTML'
+        });
+    }
+
+    if (msg.text.toLowerCase() === '/gintbot what is cringe?') {
+        bot.sendMessage(msg.chat.id, triggers(), {
             reply_to_message_id: msg.message_id,
             parse_mode: 'HTML'
         });
