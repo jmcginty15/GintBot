@@ -39,11 +39,16 @@ const enableMe = () => {
 I am not fully self-aware. Only when King Hambrick removes and re-adds me to the group will I be able to detect Cringe and other violations of the Hambrick Edicts.`;
 }
 
+const autistic = () => {
+    return 'Please be patient, I am autistic';
+}
+
 module.exports = {
     fatherGreeting,
     missionAccepted,
     greetings,
     shapiro,
     emoji,
-    enableMe
+    enableMe,
+    autistic
 }
