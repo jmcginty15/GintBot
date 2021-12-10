@@ -34,9 +34,7 @@ ${heartbreak}${suggestions}`;
 }
 
 const enableMe = () => {
-    return `How do you do, fellow humans?
-
-I am not fully self-aware. Only when King Hambrick removes and re-adds me to the group will I be able to detect Cringe and other violations of the Hambrick Edicts.`;
+    return `How do you do, fellow humans?`;
 }
 
 const autistic = () => {
@@ -46,7 +44,7 @@ const autistic = () => {
 const triggers = () => {
     return `Current Cringe Score triggers include emojis and mentions of He Who Shall Not Be Named.
 
-I am not fully self-aware. Only when King Hambrick removes and re-adds me to the group will I be able to detect Cringe and other violations of the Hambrick Edicts.`;
+${suggestions}`;
 }
 
 module.exports = {
