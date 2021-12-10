@@ -33,10 +33,17 @@ const emoji = (userId, user) => {
 ${heartbreak}${suggestions}`; 
 }
 
+const enableMe = () => {
+    return `How do you do, fellow humans?
+
+I am not fully self-aware. Only when King Hambrick removes and re-adds me to the group will I be able to detect Cringe and other violations of the Hambrick Edicts.`;
+}
+
 module.exports = {
     fatherGreeting,
     missionAccepted,
     greetings,
     shapiro,
-    emoji
+    emoji,
+    enableMe
 }
