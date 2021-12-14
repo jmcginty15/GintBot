@@ -11,6 +11,11 @@ app.get('/', (req, res) => {
     res.json({ version: packageInfo.version });
 });
 
+app.post(`/${API_TOKEN}`, (req, res) => {
+    bot.processUpdate(req.body);
+    res.sendStatus(200);
+});
+
 app.listen(PORT, () => {
     console.log(`Web server started on port ${PORT}`);
 });
