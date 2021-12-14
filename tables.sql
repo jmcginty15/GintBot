@@ -1,11 +1,12 @@
-USE hambrick_chat;
-GO
+-- USE hambrick_chat;
+-- GO
 
 DROP TABLE IF EXISTS users;
-GO
+-- GO
 
 CREATE TABLE users (
     id BIGINT PRIMARY KEY,
-    score INT
+    score INT,
+    time_cutoff TIMESTAMPTZ
 );
-GO
+-- GO

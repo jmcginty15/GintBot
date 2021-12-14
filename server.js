@@ -2,7 +2,10 @@ const express = require('express');
 const app = express();
 const packageInfo = require('./package.json');
 const PORT = process.env.PORT || 3001;
-require('./bot');
+const { bot, API_TOKEN } = require('./bot');
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.json({ version: packageInfo.version });
