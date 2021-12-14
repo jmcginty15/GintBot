@@ -15,9 +15,9 @@ const {
     sandCrabGirl
 } = require('./replies');
 
-const bot = new Bot(API_TOKEN, { polling: true });
-// const bot = new Bot(API_TOKEN);
-// bot.setWebHook(`https://gint-bot.herokuapp.com/${bot.token}`);
+// const bot = new Bot(API_TOKEN, { polling: true });
+const bot = new Bot(API_TOKEN);
+bot.setWebHook(`https://gint-bot.herokuapp.com/${bot.token}`);
 
 console.log('Bot server started');
 
