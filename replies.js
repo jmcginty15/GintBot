@@ -71,8 +71,8 @@ const emoji = async (user) => {
     let name = '';
     if (user.username) name = user.username;
     else {
-        name = user.firstName;
-        if (user.lastName) name += ` ${user.lastName}`;
+        name = user.first_name;
+        if (user.last_name) name += ` ${user.last_name}`;
     }
 
     return `<a href="tg://user?id=${user.id}">${name}</a>, you have violated King Hambrick Edict #5872: No emojis in the chat. Your new Cringe score is ${newScore}. Go forth and Cringe no more.
