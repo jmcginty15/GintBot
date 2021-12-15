@@ -99,7 +99,7 @@ const listCringe = async () => {
     const users = res.rows;
 
     if (users.length === 0) return `No one in the chat has committed any acts of Cringe. Let's keep it that way.`;
-    
+
     let output = `The most Cringey users in the chat:
 `;
     for (let user of users) {
@@ -158,6 +158,20 @@ const incCringeScore = async (inUser) => {
         const insertRes = await db.query('INSERT INTO users (id, username, first_name, last_name, score) VALUES ($1, $2, $3, $4, $5) RETURNING score', [inUser.id, inUser.username, inUser.first_name, inUser.last_name, 1]);
         return insertRes.rows[0].score;
     }
+}
+
+const cringeSquad = () => {
+    return `HEAR YE, HEAR YE.
+
+For their actions in the OGB Slack Shannon (she/her) Event, the court has judged the following members guilty of Cringe and sentenced them to receive one Cringe point:
+
+<a href="tg://user?id=">xdude736</a>
+<a href="tg://user?id=">Cam</a>
+<a href="tg://user?id=1505761461">Erikolson1</a>
+
+As the Instigintor of the entire affair, <a href="tg://user?id=1901369769">GintFather</a> has been judged guilty of the instigation of Cringe and has therefore been sentenced to receive 2 Cringe points.
+
+Use the /listCringe command to see a list of all current Cringe scores.`;
 }
 
 module.exports = {

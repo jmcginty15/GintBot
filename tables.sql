@@ -1,13 +1,13 @@
-DROP TABLE IF EXISTS users;
+-- DROP TABLE IF EXISTS users;
 
-CREATE TABLE users (
-    id BIGINT PRIMARY KEY,
-    username TEXT,
-    first_name TEXT,
-    last_name TEXT,
-    score INT,
-    time_cutoff TIMESTAMPTZ
-);
+-- CREATE TABLE users (
+--     id BIGINT PRIMARY KEY,
+--     username TEXT,
+--     first_name TEXT,
+--     last_name TEXT,
+--     score INT,
+--     time_cutoff TIMESTAMPTZ
+-- );
 
 -- INSERT INTO users (id, username, first_name, last_name, score, time_cutoff) VALUES
 --     (1914032763, NULL, 'Sand', 'Crab', 1, NULL),
@@ -24,3 +24,5 @@ CREATE TABLE users (
 --     (1845033972, NULL, 'Jake', 'the Larger', 0, NULL),
 --     (1880837871, NULL, 'Shawn', 'Sisco', 0, NULL),
 --     (1024257970, NULL, 'MMB', NULL, 0, NULL);
+
+SELECT * FROM users;
