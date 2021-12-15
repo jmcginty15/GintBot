@@ -165,8 +165,8 @@ const cringeSquad = () => {
 
 For their actions in the OGB Slack Shannon (she/her) Event, the court has judged the following members guilty of Cringe and sentenced them to receive one Cringe point:
 
-<a href="tg://user?id=">xdude736</a>
-<a href="tg://user?id=">Cam</a>
+<a href="tg://user?id=1923968347">xdude736</a>
+<a href="tg://user?id=1929666358">Cam</a>
 <a href="tg://user?id=1505761461">Erikolson1</a>
 
 As the Instigintor of the entire affair, <a href="tg://user?id=1901369769">GintFather</a> has been judged guilty of the instigation of Cringe and has therefore been sentenced to receive 2 Cringe points.
@@ -186,5 +186,6 @@ module.exports = {
     autistic,
     triggers,
     listCringe,
-    myCringe
+    myCringe,
+    cringeSquad
 }

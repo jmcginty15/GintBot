@@ -25,4 +25,8 @@
 --     (1880837871, NULL, 'Shawn', 'Sisco', 0, NULL),
 --     (1024257970, NULL, 'MMB', NULL, 0, NULL);
 
+UPDATE users SET score = 2 WHERE id = 1923968347 OR id = 1901369769;
+INSERT INTO users (id, username, first_name, last_name, score, time_cutoff) VALUES
+    (1929666358, NULL, 'Cam', NULL, 1, NULL),
+    (1505761461, 'Erikolson1', 'Erik', 'Olson', 1, NULL);
 SELECT * FROM users;
