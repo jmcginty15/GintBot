@@ -25,12 +25,12 @@ console.log('Bot server started');
 bot.on('message', (msg) => {
     // if (msg.chat.id !== -1001555709515) {
     // commands
-    if (msg.text.toLowerCase() === '/help') bot.sendMessage(msg.chat.id, help(), { reply_to_message_id: msg.message_id });
-    if (msg.text.toLowerCase() === '/listcringe') listCringe().then(res => bot.sendMessage(msg.chat.id, res, { reply_to_message_id: msg.message_id, parse_mode: 'HTML' }));
-    if (msg.text.toLowerCase() === '/mycringe') myCringe(msg.from).then(res => bot.sendMessage(msg.chat.id, res, { reply_to_message_id: msg.message_id, parse_mode: 'HTML' }));
-    if (msg.text.toLowerCase() === '/whatiscringe') bot.sendMessage(msg.chat.id, triggers(), { reply_to_message_id: msg.message_id, parse_mode: 'HTML' });
-    if (msg.text.toLowerCase() === '/hellogintbot') bot.sendMessage(msg.chat.id, greetings(), { reply_to_message_id: msg.message_id, parse_mode: 'HTML' });
-    if (msg.text.toLowerCase() === '/gintbot') bot.sendMessage(msg.chat.id, autistic(), { reply_to_message_id: msg.message_id, parse_mode: 'HTML' });
+    if (msg.text.toLowerCase() === '/help' || msg.text.toLowerCase() === '/help ') bot.sendMessage(msg.chat.id, help(), { reply_to_message_id: msg.message_id });
+    if (msg.text.toLowerCase() === '/listcringe' || msg.text.toLowerCase() === '/listcringe ') listCringe().then(res => bot.sendMessage(msg.chat.id, res, { reply_to_message_id: msg.message_id, parse_mode: 'HTML' }));
+    if (msg.text.toLowerCase() === '/mycringe' || msg.text.toLowerCase() === '/mycringe ') myCringe(msg.from).then(res => bot.sendMessage(msg.chat.id, res, { reply_to_message_id: msg.message_id, parse_mode: 'HTML' }));
+    if (msg.text.toLowerCase() === '/whatiscringe' || msg.text.toLowerCase() === '/whatiscringe ') bot.sendMessage(msg.chat.id, triggers(), { reply_to_message_id: msg.message_id, parse_mode: 'HTML' });
+    if (msg.text.toLowerCase() === '/hellogintbot' || msg.text.toLowerCase() === '/hellogintbot ') bot.sendMessage(msg.chat.id, greetings(), { reply_to_message_id: msg.message_id, parse_mode: 'HTML' });
+    if (msg.text.toLowerCase() === '/gintbot' || msg.text.toLowerCase() === '/gintbot ') bot.sendMessage(msg.chat.id, autistic(), { reply_to_message_id: msg.message_id, parse_mode: 'HTML' });
 
     // father messages
     if (msg.from.id === 1901369769) {
